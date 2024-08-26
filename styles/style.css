@@ -73,3 +73,14 @@
   text-align:center;
   line-height:16px;
 }
+
+@media screen and (max-width:900px){
+  #rickroll{
+    font-size:6px;
+  }
+}
+@media screen and (max-width:600px){
+  #rickroll{
+    font-size:6px;
+  }
+}
