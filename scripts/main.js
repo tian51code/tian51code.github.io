@@ -91,7 +91,7 @@ function gsat(){
   event.preventDefault();
   if ((temp!=null)&&(temp!="")&&(temp!=0)){
     str=temp;
-    temp=parseInt(str*5);
+    temp=parseInt(str*5*60);
     saving(describes[0],temp);
     addtime(temp);
   }
@@ -107,7 +107,7 @@ function duo(){
   event.preventDefault();
   if ((temp!=null)&&(temp!="")&&(temp!=0)){
     str=temp;
-    temp=parseInt(str/100);
+    temp=parseInt((str/100)*60);
     saving(describes[1],temp);
     addtime(temp);
   }
