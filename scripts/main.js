@@ -92,7 +92,7 @@ function gsat(){
   if ((temp!=null)&&(temp!="")&&(temp!=0)){
     str=temp;
     temp=parseInt(str*5*60);
-    saving(describes[0],temp);
+    saving(describes[0],(temp/60));
     addtime(temp);
   }
   else{
@@ -108,7 +108,7 @@ function duo(){
   if ((temp!=null)&&(temp!="")&&(temp!=0)){
     str=temp;
     temp=parseInt((str/100)*60);
-    saving(describes[1],temp);
+    saving(describes[1],(temp/60));
     addtime(temp);
   }
   else{
@@ -127,8 +127,8 @@ function addother(){
   event.preventDefault();
   if ((temp!=null)&&(temp!="")&&(temp!=0)){
     str=temp;
-    temp=parseInt(str);
-    saving(temp_des,temp);
+    temp=parseInt(str*60);
+    saving(temp_des,(temp/60));
     addtime(temp);
   }
   else{
@@ -147,8 +147,8 @@ function delother(){
   event.preventDefault();
   if ((temp!=null)&&(temp!="")&&(temp!=0)){
     str=temp;
-    temp=parseInt(str);
-    saving(temp_des,((count>=temp)?(-temp):(-count)));
+    temp=parseInt(str*60);
+    saving(temp_des,((count>=temp)?(-temp/60):(-count/60)));
     addtime((count>=temp)?(-temp):(-count));
   }
   else{
