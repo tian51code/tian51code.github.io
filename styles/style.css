@@ -1,0 +1,75 @@
+.GniTimer_div{
+  width:600px;
+  margin:40px auto 0px auto;
+  text-align:center;
+  line-height:1px;
+}
+#GniTimer_logo{
+  font-size:32px;
+  color:coral;
+}
+#rickroll{
+  font-size:10px;
+}
+#GheadDfeet_background{
+  text-align:center;
+  position:relative;
+}
+#GheadDfeet{
+  position:absolute;
+  left:45%;
+  top:49%;
+  transform:translate(-50%,-50%);
+}
+
+.Timer_div{
+  width:600px;
+  margin:auto auto;
+  text-align:center;
+  line-height:5px;
+  font-size:24px;
+  position:relative;
+}
+#colon{
+  position:absolute;
+  left:50%;
+  top:88%;
+  transform:translate(-50%,-50%);
+}
+.buttons{
+  display:inline-block;
+  letter-spacing:5px;
+  position:absolute;
+  left:50%;
+  top:180%;
+  transform:translate(-50%,-50%);
+}
+
+.controler{
+  width:448px;
+  height:130px;
+  margin:50px auto 0px auto;
+  text-align:left;
+  line-height:20px;
+}
+.options{
+  display:inline-block;
+  font-size:16px;
+  position:absolute;
+}
+.add{
+  color:rgb(0, 168, 70);
+  font-weight:600;
+}
+.del{
+  color:rgb(189, 0, 44);
+  font-weight:550;
+}
+
+.history{
+  width:360px;
+  height:500px;
+  margin:60px auto 0px auto;
+  text-align:center;
+  line-height:16px;
+}

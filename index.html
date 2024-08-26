@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GniTimer</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--LOGO-->
+    <div
+      class="GniTimer_div">
+      <h4>Hello,&#160this&#160is&#160
+        <span id="GniTimer_logo">GniTimer</span>
+        <span id="rickroll">（Logo尚未完成，在此之前，你可以......
+          <a
+          href="https://youtu.be/dQw4w9WgXcQ?si=Eya5CQnBpgEQ6WPs"
+          target="_blank"
+          title="更多好作品"
+          >看看更多好作品
+          </a>）
+        </span>
+      </h4>
+      <div
+        id="GheadDfeet_background">
+        <img
+          src="images/characters/GheadDfeet_BG.png"
+          alt="GheadDfeet_background"
+          width="288"/>
+        <div>
+          <img
+            id="GheadDfeet"
+            src="images/characters/GheadDfeet_24.gif"
+            alt="GheadDfeet"
+            width="120"/>
+        </div>
+      </div>  
+    </div>
+    <!--Timer-->
+    <div
+      class="Timer_div">
+      <h3>The&#160Timer</h3>
+      <h2>
+        <span id="hr"></span>&#160&#160&#160<span id="min"></span>&#160&#160&#160<span id="sec"></span>
+      </h2>
+      <div id="colon">
+        <h2>&#160&#160&#160&#160：&#160&#160&#160：&#160&#160&#160&#160</h2>
+      </div>
+      <div
+        class="buttons">
+        <button id="start">開始</button>
+        <button id="stop">暫停</button>
+        <button id="reset">重設</button>
+      </div>
+    </div>
+    <!--time_changing options-->
+    <div class="controler">
+      <div class="options">
+        <form>
+          <label for="GSAT_input">
+            <p class="add">增加時間，學測複習講義（1頁 = 5分鐘）&#160
+              <input
+                type="text"
+                size="12"
+                placeholder="輸入頁數（>=1）"
+                oninput="value=value.replace(/[^\d]/g,'')"
+                onkeyup="this.value=this.value.replace(/[]/g,'')"
+                id="GSAT_input"/>
+              <button id="GSAT_button">送出</button></p>
+          </label>
+        </form>
+        <form>
+          <label for="duolingo_input">
+            <p class="add">增加時間，多鄰國（100 XPs = 1分鐘）&#160&#160&#160&#160&#160
+              <input
+                type="text"
+                size="12"
+                placeholder="輸入XP（>=100）"
+                oninput="value=value.replace(/[^\d]/g,'')"
+                onkeyup="this.value=this.value.replace(/[]/g,'')"
+                id="duolingo_input"/>
+              <button id="duolingo_button">送出</button></p>
+          </label>
+        </form>
+        <form>
+          <label for="add_describe_input">
+            <p class="add">增加時間，
+              <input
+                type="text"
+                size="24"
+                placeholder="輸入敘述（長度<=半形30格）"
+                maxlength="30"
+                id="add_describe_input"/>
+          </label>&#160&#160
+          <label for="add_time_input">
+            <input
+              type="text"
+              size="12"
+              placeholder="輸入時間（min）"
+              oninput="value=value.replace(/[^\d]/g,'')"
+              onkeyup="this.value=this.value.replace(/[]/g,'')"
+              id="add_time_input"/>
+          </label>
+          <button id="add_time_button">送出</button></p>
+        </form>
+        <form>
+          <label for="del_describe_input">
+            <p class="del">減少時間，
+              <input
+                type="text"
+                size="24"
+                placeholder="輸入敘述（長度<=半形30格）"
+                maxlength="30"
+                id="del_describe_input"/>
+          </label>&#160&#160
+          <label for="del_time_input">
+            <input
+              type="text"
+              size="12"
+              placeholder="輸入時間（min）"
+              oninput="value=value.replace(/[^\d]/g,'')"
+              onkeyup="this.value=this.value.replace(/[]/g,'')"
+              id="del_time_input"/>
+          </label>
+          <button id="del_time_button">送出</button></p>
+        </form>
+      </div>
+    </div>
+    <!--history-->
+    <div class="history">
+      <p>歷史紀錄</p>
+      <p id="A"></p>
+      <p id="B"></p>
+      <p id="C"></p>
+      <p id="D"></p>
+      <p id="E"></p>
+    </div>
+
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
+
